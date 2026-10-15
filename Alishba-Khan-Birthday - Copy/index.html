@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#170d24">
+<title>A little birthday story for Alishba</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Great+Vibes&display=swap" rel="stylesheet"><link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="stars" aria-hidden="true"></canvas><div class="grain"></div><div class="pointer-glow"></div>
+<header class="topbar"><a class="brand" href="#"><span>✦</span> OUR LITTLE UNIVERSE</a><div class="chapter" id="chapter">A PRIVATE LITTLE SURPRISE</div><button class="music" id="music"><span class="bars"><i></i><i></i><i></i><i></i></span><span id="musicLabel">PLAY MUSIC</span></button></header>
+<main>
+  <section class="screen active" id="gate">
+    <div class="gate-card glass">
+      <div class="portrait"><span class="portrait-ring"></span><span class="portrait-mark">✧</span><span class="portrait-caption">YOUR PHOTO</span></div>
+      <div class="eyebrow">A LITTLE SOMETHING, JUST FOR YOU</div><h1>Some moments<br>are <em>just ours.</em></h1>
+      <p class="gate-copy">A small door to a very big feeling.</p>
+      <form id="passwordForm"><label for="password">PASSWORD</label><div class="password-wrap"><input id="password" type="password" autocomplete="off" placeholder="Enter password" aria-label="Enter password"><button type="button" id="showPassword" aria-label="Show password">◉</button></div><p class="error" id="passwordError" aria-live="polite"></p><button class="primary" type="submit"><span>OPEN YOUR SURPRISE</span><b>↗</b></button></form>
+      <div class="gate-foot"><span>✦</span> MADE WITH LOVE <span>✦</span></div>
+    </div><div class="gate-decoration d1">✧</div><div class="gate-decoration d2">✦</div>
+  </section>
+  <section class="screen quiz-screen" id="quiz">
+    <div class="section-kicker">A TINY LITTLE GAME <span>✿</span></div><div class="quiz-heading"><h2>How much love is in<br><em>your little efforts?</em></h2><p>Har answer ke saath tumhara Love Score live update hoga.</p></div>
+    <div class="quiz-shell glass"><div class="quiz-progress-line"><span id="progressFill"></span></div><div class="quiz-meta"><span id="questionCount">QUESTION 01 / 07</span><span>LOVE METER <b id="liveScore">0%</b></span></div><div id="questionArea"></div><div class="quiz-controls"><button class="text-button" id="backQuestion">← BACK</button><button class="primary next-button" id="nextQuestion" disabled><span>NEXT QUESTION</span><b>→</b></button></div></div>
+    <div class="quiz-footnote">A = 1 &nbsp;·&nbsp; B = 2 &nbsp;·&nbsp; C = 3 &nbsp;·&nbsp; D = 4 &nbsp; · &nbsp; SCORE OUT OF 28</div>
+  </section>
+  <section class="screen score-screen" id="score">
+    <div class="score-sparkles">✦ &nbsp; ✧ &nbsp; ✦</div><div class="section-kicker">AND THE LOVE METER SAYS</div><div class="score-ring" id="scoreRing"><span class="score-value" id="scoreValue">0</span><span class="score-percent">%</span></div><h2 id="scoreTitle">A love like ours<br><em>keeps growing.</em></h2><p id="scoreCopy">Every answer was a little reminder of what makes us, us.</p><button class="primary" id="toBirthday"><span>UNWRAP YOUR BIRTHDAY</span><b>↗</b></button>
+  </section>
+  <section class="screen birthday-screen" id="birthday">
+    <div class="birthday-top"><div class="section-kicker">TODAY, THE STARS ARE CELEBRATING</div><p class="birthday-script">Happy Birthday</p><h1>Alishba <em>Khan</em></h1><p class="birthday-deck">To my favorite person, my safest place,<br>and every lovely tomorrow I get to share with you.</p><div class="date-pill">✦ &nbsp; 16 NOVEMBER &nbsp; ✦</div></div>
+    <div class="birthday-scene" id="birthdayScene"><div class="scene-aura"></div><div class="wind-wave" id="windWave" aria-hidden="true">〰 〰 〰</div><div class="cake-wrap" id="cakeWrap"><div class="candles" id="candles"><div class="candle c1"><i></i></div><div class="candle c2"><i></i></div><div class="candle c3"><i></i></div><div class="candle c4"><i></i></div><div class="candle c5"><i></i></div></div><div class="cake cake-top"><div class="icing-drip dr1"></div><div class="icing-drip dr2"></div><div class="icing-drip dr3"></div><div class="berry">♥</div><div class="berry berry2">♥</div></div><div class="cake cake-mid"><span class="cream-piping"></span></div><div class="cake cake-base"><span class="base-piping"></span></div><div class="slice-piece"><span></span></div><div class="cake-board"></div><div class="cake-shadow"></div></div><div class="cake-instructions" id="cakeInstructions"><span class="instruction-icon">☝</span><b>Make a wish, then blow out the candles</b><span>Press and hold the button below</span></div><div class="cake-instructions hidden" id="cutInstructions"><span class="instruction-icon">✦</span><b>Your wish is on its way.</b><span>Now let's have a slice together</span></div></div>
+    <button class="blow-button" id="blowButton"><span class="blow-icon">〰</span><span id="blowLabel">PRESS & HOLD TO BLOW</span></button>
+    <button class="cut-button hidden" id="cutButton"><span>✦</span> CUT A SLICE <span>✦</span></button>
+    <div class="birthday-confetti" id="birthdayConfetti"></div>
+  </section>
+  <section class="screen memory-screen" id="memory">
+    <div class="section-kicker">A MEMORY I'M KEEPING CLOSE</div><div class="memory-layout"><div class="memory-photo"><span class="photo-frame">✧</span><span class="photo-label">OUR FAVORITE MEMORY</span><span class="photo-note">A place for a photo<br>of us, someday soon.</span></div><div class="memory-copy"><p class="memory-date">A MOMENT THAT FEELS LIKE HOME</p><h2>My favorite place<br>is <em>wherever you are.</em></h2><p>Somehow, even the ordinary days turn into the ones I want to remember, as long as they're ours. Your laugh is still my favorite sound, and your hand will always feel like home.</p><p>Here's to collecting a thousand more little moments, side by side.</p><span class="memory-sign">Always choosing you <i>♡</i></span></div></div>
+    <button class="primary" id="toLetter"><span>ONE LAST LITTLE THING</span><b>↗</b></button>
+  </section>
+  <section class="screen letter-screen" id="letter">
+    <div class="letter-stars">✿ &nbsp; ✧ &nbsp; ✿</div><div class="letter-envelope" id="envelope"><div class="envelope-back"></div><article class="letter-paper"><span class="letter-date">16 NOVEMBER · FOR ALISHBA</span><div class="letter-flower">✿</div><h2>Happy Birthday Meri Jaan ❤️</h2><p>Aaj ka din mere liye sirf tumhari birthday nahi, balkay us beautiful person ko celebrate karne ka din hai jo meri life ka itna special part ban chuki hai.</p><p>Quiz mein tumne jo bhi answers diye, woh sirf answers nahi thay… kahin na kahin woh tumhari feelings aur hamare relationship ko show karte hain. ❤️</p><p>Mujhe nahi pata hamara Love Score kitna aaya hai, lekin ek baat mujhe zaroor pata hai — <strong>tum mere liye bohat special ho.</strong></p><p>Tumhare saath meri favourite cheez sirf happy moments nahi, balkay woh small small moments bhi hain jo shayad kisi aur ke liye normal hon, lekin mere liye bohat meaningful hain.</p><p>I hope tumhari life ka har new year tumhe aur zyada happiness, peace aur beautiful memories de. Aur haan, meri ek wish ye bhi hai ke hum dono aise hi ek dusre ko samajhte, support karte aur annoy karte rahen. 😂❤️</p><p><strong>Happy Birthday once again, meri favourite person. ❤️</strong></p><p>Aaj ka din enjoy karo, smile karo, aur yaad rakho…</p><p class="letter-end"><strong>Tumhari birthday special hai, kyun ke tum special ho. ❤️</strong></p><div class="signature">Tumhara, hamesha <span>♡</span></div><div class="wax-seal">A<span>✿</span></div></article><div class="envelope-flap"></div></div><button class="open-letter" id="openLetter"><span>OPEN YOUR LETTER</span><b>↓</b></button><button class="primary couple-game-link" id="toCoupleGame"><span>ONE LAST COUPLE GAME</span><b>✿</b></button><button class="restart" id="restart">REPLAY OUR LITTLE STORY ↺</button>
+  </section>
+  <section class="screen game-screen" id="game">
+    <div class="section-kicker">ONE LAST LITTLE GAME <span>✿</span></div><h2>Plan our <em>next date?</em></h2><p class="game-intro">Pick one from each row and let the little date-night mixer do its magic.</p>
+    <div class="date-game glass"><div class="game-step" data-step="mood"><span>01 · THE VIBE</span><div class="game-options"><button data-value="cozy">☁️ Cozy</button><button data-value="adventure">🌷 A little adventure</button><button data-value="silly">🎀 Silly & sweet</button></div></div><div class="game-step" data-step="treat"><span>02 · THE TREAT</span><div class="game-options"><button data-value="chai">☕ Chai & dessert</button><button data-value="picnic">🍓 Picnic snacks</button><button data-value="cake">🍰 Birthday cake</button></div></div><div class="game-step" data-step="ending"><span>03 · THE ENDING</span><div class="game-options"><button data-value="stars">✨ Stargazing</button><button data-value="movie">🎬 One more movie</button><button data-value="walk">🌙 A long night walk</button></div></div><button class="primary" id="mixDate" disabled><span>MAKE OUR LITTLE DATE PLAN</span><b>♡</b></button><div class="date-result" id="dateResult" aria-live="polite"></div></div>
+    <button class="restart" id="replayFromGame">START OUR STORY AGAIN ↺</button>
+  </section>
+</main>
+<div class="toast" id="toast" aria-live="polite"></div>
+<script src="script.js"></script>
+</body></html>
